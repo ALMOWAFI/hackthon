@@ -1,0 +1,17 @@
+{
+  "detected_text": [
+    {
+      "text": "Expression 1954",
+      "confidence": 0.8,
+      "bounding_box": [
+        109,
+        17,
+        86,
+        28
+      ]
+    }
+  ],
+  "document_type": "math_homework",
+  "potential_math_problems": [],
+  "analysis_summary": "OCR analysis completed. For complete math analysis, please use the full Math Feedback System."
+}

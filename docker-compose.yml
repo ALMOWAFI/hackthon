@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  vllm-server:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./hackthon:/app/hackthon
+      - ./models:/app/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./results:/app/results
+      - ./outputs:/app/outputs
+      - ./data:/app/data
+      - ./test_images:/app/test_images
+      - ./static:/app/static
+      - ./templates:/app/templates
+    environment:
+      - VLLM_API_URL=http://vllm-server:8000
+    depends_on:
+      - vllm-server
+  
+  web-interface:
+    build:
+      context: ./paper-pal-prodigy-prime
+      dockerfile: Dockerfile.react
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./paper-pal-prodigy-prime:/app
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+      - REACT_APP_VLLM_URL=http://localhost:8000
+    depends_on:
+      - flask-app

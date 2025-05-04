@@ -1,0 +1,231 @@
+{
+  "lines": [
+    {
+      "text": "DAT",
+      "confidence": 0.0,
+      "bounding_box": [
+        1068,
+        208,
+        1198,
+        208,
+        1198,
+        273,
+        1067,
+        269
+      ]
+    },
+    {
+      "text": "DRIVI",
+      "confidence": 0.0,
+      "bounding_box": [
+        1007,
+        291,
+        1199,
+        292,
+        1198,
+        354,
+        1007,
+        352
+      ]
+    },
+    {
+      "text": "---",
+      "confidence": 0.0,
+      "bounding_box": [
+        507,
+        365,
+        551,
+        368,
+        550,
+        378,
+        507,
+        375
+      ]
+    },
+    {
+      "text": "DECISIO",
+      "confidence": 0.0,
+      "bounding_box": [
+        892,
+        371,
+        1186,
+        371,
+        1186,
+        443,
+        892,
+        442
+      ]
+    },
+    {
+      "text": "x2+ 2= r2",
+      "confidence": 0.0,
+      "bounding_box": [
+        126,
+        705,
+        602,
+        713,
+        601,
+        804,
+        126,
+        798
+      ],
+      "is_equation": true,
+      "operation": "addition",
+      "is_math_expression": true
+    },
+    {
+      "text": "1+1=3",
+      "confidence": 0.0,
+      "bounding_box": [
+        149,
+        826,
+        544,
+        839,
+        540,
+        925,
+        149,
+        908
+      ],
+      "is_equation": true,
+      "operation": "addition",
+      "math_expression_type": "addition",
+      "is_math_expression": true,
+      "operation_type": "addition",
+      "first_operand": "1",
+      "operator": "+",
+      "second_operand": "1",
+      "result": "3"
+    },
+    {
+      "text": "1-1 =4",
+      "confidence": 0.0,
+      "bounding_box": [
+        175,
+        938,
+        557,
+        949,
+        555,
+        1025,
+        173,
+        1017
+      ],
+      "is_equation": true,
+      "operation": "subtraction",
+      "math_expression_type": "subtraction",
+      "is_math_expression": true,
+      "operation_type": "subtraction",
+      "first_operand": "1",
+      "operator": "-",
+      "second_operand": "1",
+      "result": "4"
+    }
+  ],
+  "language": "en",
+  "textAngle": 0.0,
+  "orientation": "Up",
+  "regions": [
+    {
+      "lines": [
+        {
+          "text": "DAT",
+          "confidence": 0.0,
+          "bounding_box": [
+            1068,
+            208,
+            1198,
+            208,
+            1198,
+            273,
+            1067,
+            269
+          ]
+        },
+        {
+          "text": "DRIVI",
+          "confidence": 0.0,
+          "bounding_box": [
+            1007,
+            291,
+            1199,
+            292,
+            1198,
+            354,
+            1007,
+            352
+          ]
+        },
+        {
+          "text": "---",
+          "confidence": 0.0,
+          "bounding_box": [
+            507,
+            365,
+            551,
+            368,
+            550,
+            378,
+            507,
+            375
+          ]
+        },
+        {
+          "text": "DECISIO",
+          "confidence": 0.0,
+          "bounding_box": [
+            892,
+            371,
+            1186,
+            371,
+            1186,
+            443,
+            892,
+            442
+          ]
+        },
+        {
+          "text": "x2+ 2= r2",
+          "confidence": 0.0,
+          "bounding_box": [
+            126,
+            705,
+            602,
+            713,
+            601,
+            804,
+            126,
+            798
+          ]
+        },
+        {
+          "text": "1+1=3",
+          "confidence": 0.0,
+          "bounding_box": [
+            149,
+            826,
+            544,
+            839,
+            540,
+            925,
+            149,
+            908
+          ]
+        },
+        {
+          "text": "1-1 =4",
+          "confidence": 0.0,
+          "bounding_box": [
+            175,
+            938,
+            557,
+            949,
+            555,
+            1025,
+            173,
+            1017
+          ]
+        }
+      ]
+    }
+  ],
+  "math_expressions_detected": 3
+}

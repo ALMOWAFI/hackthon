@@ -1,0 +1,39 @@
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for OpenCV and Tesseract
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    tesseract-ocr \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir flask requests opencv-python-headless pytesseract
+
+# Copy application files
+COPY app.py .
+COPY demo_math_feedback_system.py .
+COPY enhanced_math_system.py .
+COPY enhanced_web_server.py .
+COPY templates/ ./templates/
+COPY static/ ./static/
+COPY math_analyzer/ ./math_analyzer/
+
+# Copy necessary data folders
+COPY data/ ./data/
+COPY models/ ./models/
+COPY results/ ./results/
+
+# Create necessary directories
+RUN mkdir -p uploads results outputs
+
+# Expose port
+EXPOSE 5000
+
+# Run the application
+CMD ["python", "app.py"]

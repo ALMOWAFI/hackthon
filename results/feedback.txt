@@ -1,0 +1,47 @@
+Math Homework Analysis
+Score: 25.0%
+
+Question 1: 100%
+Equation: x² + y² = r²
+Status: Correct!
+Feedback: Great job! Your answer is correct.
+
+Question 2: 0%
+Equation: 1 + 1 = 3
+Status: Incorrect
+Correct answer: 2
+Feedback: Let's look at what needs improvement:
+
+The correct answer to 1 + 1 is 2, not 3.
+
+Calculation Error:
+- 1 + 1 equals 2, not 3
+
+- 1 + 1 equals 2, not 3
+
+Question 3: 0%
+Equation: 1 - 1 = 4
+Status: Incorrect
+Correct answer: 0
+Feedback: Let's look at what needs improvement:
+
+The correct answer to 1 - 1 is 0, not 4.
+
+Calculation Error:
+- 1 - 1 equals 0, not 4
+
+- 1 - 1 equals 0, not 4
+
+Question 4: 0%
+Equation: 1/0 = 0
+Status: Incorrect
+Correct answer: undefined
+Feedback: Let's look at what needs improvement:
+
+Division by zero is undefined in mathematics.
+
+Conceptual Error:
+- Division by zero is undefined
+
+- Division by zero is undefined
+

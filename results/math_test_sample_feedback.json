@@ -1,0 +1,429 @@
+{
+  "image_path": "math_test_sample.jpg",
+  "problems": [
+    {
+      "id": "hw_1",
+      "text": "-  - 9555 -  -  - 5 - 59 - 9959595999995 - 5995955559595595599599 -  - 99 -  - 9 -  - 5 -  - 99 -  - 5 -  -  - 9 -  - 955 -  - 59 -  - 5 -  -  -  -  -  -  -  -  -",
+      "confidence": 0.028748279437422752,
+      "bounding_box": [
+        400,
+        14,
+        39,
+        44
+      ],
+      "source": "handwritten_ocr",
+      "normalized_text": "- - 9555 - - - 5 - 59 - 9959595999995 - 5995955559595595599599 - - 99 - - 9 - - 5 - - 99 - - 5 - - - 9 - - 955 - - 59 - - 5 - - - - - - - - -",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    },
+    {
+      "id": "azure_1",
+      "text": "1 + 1 = 3",
+      "confidence": 0.95,
+      "bounding_box": [
+        50,
+        100,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "1 + 1 = 3",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    },
+    {
+      "id": "azure_2",
+      "text": "4 × 3 = 12",
+      "confidence": 0.9299999999999999,
+      "bounding_box": [
+        50,
+        200,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "4 * 3 = 12",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    },
+    {
+      "id": "azure_3",
+      "text": "10 / 2 = 5",
+      "confidence": 0.9099999999999999,
+      "bounding_box": [
+        50,
+        300,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "10 / 2 = 5",
+      "analysis": {
+        "type": "FRACTION",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "FRACTION"
+    },
+    {
+      "id": "azure_4",
+      "text": "3² + 4² = 5²",
+      "confidence": 0.8899999999999999,
+      "bounding_box": [
+        50,
+        400,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "3 * * 2 + 4 * * 2 = 5 * * 2",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    },
+    {
+      "id": "azure_5",
+      "text": "x² + y² = z²",
+      "confidence": 0.87,
+      "bounding_box": [
+        50,
+        500,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "x * * 2 + y * * 2 = z * * 2",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    },
+    {
+      "id": "azure_6",
+      "text": "3x + 5 = 11",
+      "confidence": 0.85,
+      "bounding_box": [
+        300,
+        100,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "3x + 5 = 11",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    },
+    {
+      "id": "azure_7",
+      "text": "5² + 12² = 13²",
+      "confidence": 0.83,
+      "bounding_box": [
+        300,
+        200,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "5 * * 2 + 12 * * 2 = 13 * * 2",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    },
+    {
+      "id": "azure_8",
+      "text": "21 - 7 = 13",
+      "confidence": 0.8099999999999999,
+      "bounding_box": [
+        300,
+        300,
+        200,
+        50
+      ],
+      "source": "azure_ocr",
+      "normalized_text": "21 - 7 = 13",
+      "analysis": {
+        "type": "UNKNOWN",
+        "errors": [
+          {
+            "type": "Syntax Error",
+            "description": "Invalid mathematical expression"
+          }
+        ],
+        "feedback": []
+      },
+      "math_type": "UNKNOWN"
+    }
+  ],
+  "summary": {
+    "total_problems": 9,
+    "errors_found": 9,
+    "problem_types": {
+      "UNKNOWN": 8,
+      "FRACTION": 1
+    }
+  },
+  "pedagogical_feedback": [
+    {
+      "problem_id": "hw_1",
+      "problem_text": "-  - 9555 -  -  - 5 - 59 - 9959595999995 - 5995955559595595599599 -  - 99 -  - 9 -  - 5 -  - 99 -  - 5 -  -  - 9 -  - 955 -  - 59 -  - 5 -  -  -  -  -  -  -  -  -",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_1",
+      "problem_text": "1 + 1 = 3",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_2",
+      "problem_text": "4 × 3 = 12",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_3",
+      "problem_text": "10 / 2 = 5",
+      "problem_type": "FRACTION",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_4",
+      "problem_text": "3² + 4² = 5²",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_5",
+      "problem_text": "x² + y² = z²",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_6",
+      "problem_text": "3x + 5 = 11",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_7",
+      "problem_text": "5² + 12² = 13²",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    },
+    {
+      "problem_id": "azure_8",
+      "problem_text": "21 - 7 = 13",
+      "problem_type": "UNKNOWN",
+      "errors": [
+        {
+          "type": "Syntax Error",
+          "description": "Invalid mathematical expression"
+        }
+      ],
+      "socratic_approach": [
+        "What type of problem is this?",
+        "What steps would you take to solve it?",
+        "Can you verify your solution?"
+      ],
+      "direct_instruction": [
+        "Identify the operation being performed",
+        "Follow the steps for that type of operation",
+        "Check your work by verifying your answer"
+      ],
+      "visualization_suggestion": {}
+    }
+  ]
+}

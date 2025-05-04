@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Teacher Assistant Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f7fafc;
+        }
+        .math-hero {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+        }
+        .card {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .tab {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-bottom: 2px solid transparent;
+        }
+        .tab.active {
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+            font-weight: 500;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .feedback-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            border-radius: 0 4px 4px 0;
+        }
+        .practice-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid #10b981;
+            padding: 1rem;
+            border-radius: 0 4px 4px 0;
+        }
+        .error-highlight {
+            background-color: rgba(239, 68, 68, 0.2);
+            border-radius: 4px;
+            padding: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="math-hero py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold mb-2">Math Teacher Assistant Pro</h1>
+            <p class="text-xl mb-6">Advanced AI-powered mathematics feedback and practice system</p>
+            <div class="flex items-center space-x-4">
+                <div class="h-2 w-2 rounded-full bg-green-400 animate-pulse"></div>
+                <p>vLLM models: Ready</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="card bg-white p-6 mb-6">
+                    <h2 class="text-2xl font-semibold mb-4">Upload Student Work</h2>
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="fileUpload">
+                                Student's Homework Image
+                            </label>
+                            <input class="w-full" type="file" id="fileUpload" name="file" accept="image/*">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="studentWork">
+                                Student's Work (Transcribed)
+                            </label>
+                            <textarea class="w-full px-3 py-2 border rounded-md" id="studentWork" name="student_work" rows="5" placeholder="Enter or paste the student's work here"></textarea>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="correctSolution">
+                                Correct Solution (Optional)
+                            </label>
+                            <textarea class="w-full px-3 py-2 border rounded-md" id="correctSolution" name="correct_solution" rows="5" placeholder="Enter the correct solution (if available)"></textarea>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="teachingStyle">
+                                Teaching Style
+                            </label>
+                            <select class="w-full px-3 py-2 border rounded-md" id="teachingStyle" name="teaching_style">
+                                {% for style in teaching_styles %}
+                                <option value="{{ style }}">{{ style|replace('_', ' ')|title }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md">
+                            Analyze &amp; Generate Feedback
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-1">
+                <div class="card bg-white p-6">
+                    <h2 class="text-2xl font-semibold mb-4">How It Works</h2>
+                    <ol class="list-decimal pl-5 space-y-3">
+                        <li class="text-gray-700">Upload an image of the student's math homework</li>
+                        <li class="text-gray-700">Provide transcribed text of the student's work</li>
+                        <li class="text-gray-700">Choose your preferred teaching style</li>
+                        <li class="text-gray-700">Get personalized feedback with localized error detection</li>
+                        <li class="text-gray-700">Generate custom practice problems based on error patterns</li>
+                    </ol>
+                    
+                    <div class="mt-6 bg-blue-50 p-4 rounded-md">
+                        <h3 class="font-medium text-blue-800">Available Teaching Styles:</h3>
+                        <ul class="mt-2 space-y-1">
+                            <li class="text-sm text-gray-600">• <strong>Detailed</strong> - Thorough explanations with step-by-step guidance</li>
+                            <li class="text-sm text-gray-600">• <strong>Encouraging</strong> - Positive reinforcement and motivation</li>
+                            <li class="text-sm text-gray-600">• <strong>Historical Mathematician</strong> - Teaching through historical context</li>
+                            <li class="text-sm text-gray-600">• <strong>Quantum Professor</strong> - Advanced theoretical approach</li>
+                            <li class="text-sm text-gray-600">• <strong>Renaissance Artist</strong> - Creative and visual learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="results" class="mt-8 hidden">
+            <div class="card bg-white p-6">
+                <h2 class="text-2xl font-semibold mb-4">Analysis Results</h2>
+                
+                <div class="flex border-b mb-4">
+                    <div id="tab-images" class="tab active">Images</div>
+                    <div id="tab-feedback" class="tab">Feedback</div>
+                    <div id="tab-practice" class="tab">Practice Sheet</div>
+                </div>
+                
+                <div id="content-images" class="tab-content active">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">Original Image</h3>
+                            <img id="originalImage" class="max-w-full h-auto rounded-md" src="" alt="Original student work">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">Annotated Image</h3>
+                            <img id="markedImage" class="max-w-full h-auto rounded-md" src="" alt="Annotated student work">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="content-feedback" class="tab-content">
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Expert Feedback</h3>
+                        <div id="expertFeedback" class="feedback-box whitespace-pre-line"></div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h3 class="text-lg font-medium mb-2">Detected Errors</h3>
+                        <div id="errorList" class="space-y-3"></div>
+                    </div>
+                </div>
+                
+                <div id="content-practice" class="tab-content">
+                    <h3 class="text-lg font-medium mb-2">Custom Practice Sheet</h3>
+                    <div id="practiceSheet" class="practice-box whitespace-pre-line"></div>
+                    <button id="printPractice" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md">
+                        Print Practice Sheet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center">Math Teacher Assistant Pro © 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const uploadForm = document.getElementById('uploadForm');
+            const resultsSection = document.getElementById('results');
+            const originalImage = document.getElementById('originalImage');
+            const markedImage = document.getElementById('markedImage');
+            const expertFeedback = document.getElementById('expertFeedback');
+            const errorList = document.getElementById('errorList');
+            const practiceSheet = document.getElementById('practiceSheet');
+            const printPractice = document.getElementById('printPractice');
+            
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            // Handle tab switching
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    tab.classList.add('active');
+                    const contentId = 'content-' + tab.id.split('-')[1];
+                    document.getElementById(contentId).classList.add('active');
+                });
+            });
+            
+            // Handle form submission
+            uploadForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(uploadForm);
+                
+                // Show loading state
+                const submitButton = uploadForm.querySelector('button[type="submit"]');
+                const originalButtonText = submitButton.textContent;
+                submitButton.textContent = 'Processing...';
+                submitButton.disabled = true;
+                
+                try {
+                    const response = await fetch('/detect', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (data.error) {
+                        alert('Error: ' + data.error);
+                        return;
+                    }
+                    
+                    // Display results
+                    resultsSection.classList.remove('hidden');
+                    originalImage.src = data.original_image;
+                    markedImage.src = data.marked_image;
+                    expertFeedback.textContent = data.expert_feedback;
+                    practiceSheet.textContent = data.practice_sheet;
+                    
+                    // Display errors
+                    errorList.innerHTML = '';
+                    if (data.errors && data.errors.length > 0) {
+                        data.errors.forEach(error => {
+                            const errorItem = document.createElement('div');
+                            errorItem.className = 'p-3 bg-red-50 rounded-md';
+                            errorItem.innerHTML = `
+                                <div class="font-medium text-red-700">Line ${error.line_number}: ${error.error_type}</div>
+                                <div class="mt-1 text-sm">
+                                    <span class="error-highlight">${error.error_text}</span> should be 
+                                    <span class="font-medium">${error.correction}</span>
+                                </div>
+                                <div class="mt-1 text-sm text-gray-600">${error.explanation}</div>
+                            `;
+                            errorList.appendChild(errorItem);
+                        });
+                    } else {
+                        errorList.innerHTML = '<div class="p-3 bg-green-50 rounded-md text-green-700">No errors detected. Great job!</div>';
+                    }
+                    
+                    // Scroll to results
+                    resultsSection.scrollIntoView({ behavior: 'smooth' });
+                    
+                } catch (err) {
+                    alert('An error occurred. Please try again.');
+                    console.error(err);
+                } finally {
+                    // Restore button
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                }
+            });
+            
+            // Print practice sheet
+            printPractice.addEventListener('click', function() {
+                const printWindow = window.open('', '_blank');
+                printWindow.document.write(`
+                    <html>
+                    <head>
+                        <title>Math Practice Sheet</title>
+                        <style>
+                            body { font-family: Arial, sans-serif; padding: 20px; }
+                            h1 { color: #2563eb; }
+                            pre { white-space: pre-line; }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>Math Practice Sheet</h1>
+                        <pre>${practiceSheet.textContent}</pre>
+                    </body>
+                    </html>
+                `);
+                printWindow.document.close();
+                printWindow.print();
+            });
+        });
+    </script>
+</body>
+</html>

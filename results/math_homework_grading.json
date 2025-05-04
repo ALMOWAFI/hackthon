@@ -1,0 +1,224 @@
+{
+  "markup": {
+    "annotations": [
+      {
+        "type": "strong_point",
+        "paragraph": 2,
+        "description": "Clear topic sentence"
+      },
+      {
+        "type": "spelling_error",
+        "paragraph": 3,
+        "word": "its",
+        "correction": "it's",
+        "description": "Possible incorrect use of 'its'"
+      },
+      {
+        "type": "punctuation_error",
+        "paragraph": 3,
+        "text": ", and",
+        "description": "Possible comma splice with conjunction"
+      },
+      {
+        "type": "strong_point",
+        "paragraph": 3,
+        "description": "Clear topic sentence"
+      },
+      {
+        "type": "strong_point",
+        "paragraph": 4,
+        "description": "Clear topic sentence"
+      }
+    ],
+    "paragraph_count": 5,
+    "word_count": 154
+  },
+  "detailed_feedback": {
+    "section_analysis": [
+      {
+        "paragraph_number": 1,
+        "text_excerpt": "\nMathematics Homework Assignment",
+        "issues": [],
+        "strengths": []
+      },
+      {
+        "paragraph_number": 2,
+        "text_excerpt": "Question 1: Solve the quadratic equation x^2 - 5x + 6 = 0\nAnswer: I'll use the quadratic formula: x ...",
+        "issues": [],
+        "strengths": []
+      },
+      {
+        "paragraph_number": 3,
+        "text_excerpt": "Question 2: Find the derivative of f(x) = 3x^2 - 2x + 1\nAnswer: Using the power rule: f'(x) = 6x - 2",
+        "issues": [],
+        "strengths": [
+          {
+            "type": "strong_point",
+            "description": "Clear topic sentence"
+          }
+        ]
+      },
+      {
+        "paragraph_number": 4,
+        "text_excerpt": "Question 3: If a triangle has sides of length 3, 4, and 5, what is its area?\nAnswer: This is a right...",
+        "issues": [
+          {
+            "type": "spelling_error",
+            "description": "Possible incorrect use of 'its'"
+          },
+          {
+            "type": "punctuation_error",
+            "description": "Possible comma splice with conjunction"
+          }
+        ],
+        "strengths": [
+          {
+            "type": "strong_point",
+            "description": "Clear topic sentence"
+          }
+        ]
+      },
+      {
+        "paragraph_number": 5,
+        "text_excerpt": "Question 4: Simplify the expression: (3x^2y)(2xy^3)\nAnswer: (3x^2y)(2xy^3) = 3 \u00d7 2 \u00d7 x^2 \u00d7 x \u00d7 y \u00d7 y...",
+        "issues": [],
+        "strengths": [
+          {
+            "type": "strong_point",
+            "description": "Clear topic sentence"
+          }
+        ]
+      }
+    ],
+    "error_patterns": [
+      {
+        "type": "spelling_error",
+        "frequency": 1,
+        "examples": [
+          "its"
+        ]
+      },
+      {
+        "type": "punctuation_error",
+        "frequency": 1,
+        "examples": [
+          ", and"
+        ]
+      }
+    ],
+    "strengths": [
+      {
+        "type": "strong_point",
+        "paragraph": 2,
+        "description": "Clear topic sentence"
+      },
+      {
+        "type": "strong_point",
+        "paragraph": 3,
+        "description": "Clear topic sentence"
+      },
+      {
+        "type": "strong_point",
+        "paragraph": 4,
+        "description": "Clear topic sentence"
+      }
+    ],
+    "improvement_suggestions": [
+      {
+        "focus_area": "Spelling and Word Choice",
+        "suggestions": [
+          "Use spell check before submitting",
+          "Review commonly confused words like there/their/they're",
+          "Keep a personal list of words you frequently misspell"
+        ]
+      }
+    ]
+  },
+  "assessment": {
+    "rubric_name": "Stem Paper Rubric - High_school Level",
+    "criteria_scores": [
+      {
+        "criterion_id": "content",
+        "criterion_name": "Content & Development",
+        "description": "The depth, breadth, and relevance of ideas presented",
+        "max_points": 30,
+        "score": 18,
+        "justification": "Paper is quite short, limiting depth of content."
+      },
+      {
+        "criterion_id": "organization",
+        "criterion_name": "Organization & Structure",
+        "description": "The logical flow and effective structuring of ideas",
+        "max_points": 25,
+        "score": 21,
+        "justification": "Good paragraph structure and transitions."
+      },
+      {
+        "criterion_id": "language",
+        "criterion_name": "Language & Style",
+        "description": "Grammar, spelling, sentence structure, and word choice",
+        "max_points": 25,
+        "score": 22,
+        "justification": "Few language errors; generally well-written."
+      },
+      {
+        "criterion_id": "formatting",
+        "criterion_name": "Formatting & Presentation",
+        "description": "Adherence to style guidelines and visual presentation",
+        "max_points": 10,
+        "score": 8,
+        "justification": "Paper follows basic formatting expectations."
+      },
+      {
+        "criterion_id": "critical_thinking",
+        "criterion_name": "Critical Thinking",
+        "description": "Depth of analysis, synthesis, and evaluation",
+        "max_points": 10,
+        "score": 8,
+        "justification": "Shows acceptable critical thinking."
+      }
+    ],
+    "total_points": 77,
+    "total_possible": 100,
+    "percentage": 77.0,
+    "letter_grade": "C",
+    "overall_assessment": "This paper meets requirements and demonstrates good work in Language & Style. The primary area needing improvement is Content & Development."
+  },
+  "summary": {
+    "final_grade": {
+      "percentage": 77.0,
+      "letter_grade": "C",
+      "points": "77/100"
+    },
+    "overall_assessment": "This paper meets requirements and demonstrates good work in Language & Style. The primary area needing improvement is Content & Development.",
+    "key_strengths": [
+      {
+        "description": "Clear topic sentence",
+        "frequency": "Observed 3 times"
+      }
+    ],
+    "improvement_areas": [
+      {
+        "area": "Content & Development",
+        "justification": "Paper is quite short, limiting depth of content.",
+        "score": "18/30 points"
+      },
+      {
+        "area": "Formatting & Presentation",
+        "justification": "Paper follows basic formatting expectations.",
+        "score": "8/10 points"
+      }
+    ],
+    "next_steps": [
+      {
+        "focus_area": "Spelling and Word Choice",
+        "suggestions": [
+          "Use spell check before submitting",
+          "Review commonly confused words like there/their/they're",
+          "Keep a personal list of words you frequently misspell"
+        ]
+      }
+    ],
+    "closing_comment": "You've met the basic requirements. Focus on the suggested improvements to strengthen your writing."
+  }
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Homework Analyzer MVP</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+            text-align: center;
+        }
+        .upload-area {
+            border: 2px dashed #3498db;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #f8fafc;
+            cursor: pointer;
+        }
+        .upload-area:hover {
+            background-color: #e8f4fe;
+        }
+        .upload-icon {
+            font-size: 48px;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #preview {
+            max-width: 100%;
+            max-height: 400px;
+            margin: 0 auto;
+            display: none;
+        }
+        #results-container {
+            margin-top: 30px;
+            display: none;
+        }
+        .stage {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .stage h3 {
+            color: #2980b9;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .problem {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+            display: none;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #error-message {
+            color: #e74c3c;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Homework Analyzer</h1>
+        
+        <div class="upload-area" id="drop-area">
+            <div class="upload-icon">📝</div>
+            <h3>Upload Student's Math Homework</h3>
+            <p>Click to browse or drag and drop an image file here</p>
+            <input type="file" id="file-input" accept="image/*" style="display: none;">
+        </div>
+        
+        <img id="preview" alt="Preview">
+        
+        <button id="analyze-btn" disabled>Analyze Homework</button>
+        
+        <div class="loader" id="loader"></div>
+        <div id="error-message"></div>
+        
+        <div id="results-container">
+            <div class="stage" id="stage1">
+                <h3>Stage 1: Problem Assessment</h3>
+                <div id="problems-container"></div>
+            </div>
+            
+            <div class="stage" id="stage2">
+                <h3>Stage 2: Targeted Feedback</h3>
+                <div id="feedback-container"></div>
+            </div>
+            
+            <div class="stage" id="stage3">
+                <h3>Stage 3: Future Development</h3>
+                <div id="summary-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM elements
+        const dropArea = document.getElementById('drop-area');
+        const fileInput = document.getElementById('file-input');
+        const preview = document.getElementById('preview');
+        const analyzeBtn = document.getElementById('analyze-btn');
+        const loader = document.getElementById('loader');
+        const resultsContainer = document.getElementById('results-container');
+        const errorMessage = document.getElementById('error-message');
+        
+        // Event listeners for file upload
+        dropArea.addEventListener('click', () => fileInput.click());
+        dropArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropArea.style.borderColor = '#2980b9';
+        });
+        
+        dropArea.addEventListener('dragleave', () => {
+            dropArea.style.borderColor = '#3498db';
+        });
+        
+        dropArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropArea.style.borderColor = '#3498db';
+            
+            if (e.dataTransfer.files.length) {
+                handleFile(e.dataTransfer.files[0]);
+            }
+        });
+        
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length) {
+                handleFile(fileInput.files[0]);
+            }
+        });
+        
+        function handleFile(file) {
+            // Check if file is an image
+            if (!file.type.match('image.*')) {
+                showError('Please upload an image file');
+                return;
+            }
+            
+            // Display preview
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+                analyzeBtn.disabled = false;
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        // Analyze button click
+        analyzeBtn.addEventListener('click', () => {
+            // Show loader, hide results and error
+            loader.style.display = 'block';
+            resultsContainer.style.display = 'none';
+            errorMessage.style.display = 'none';
+            analyzeBtn.disabled = true;
+            
+            // Simulate API call to your Azure backend
+            setTimeout(() => {
+                // This would be replaced with actual API call
+                analyzeHomework()
+                    .then(displayResults)
+                    .catch(error => {
+                        showError('An error occurred while analyzing the image. Please try again.');
+                        console.error(error);
+                    })
+                    .finally(() => {
+                        loader.style.display = 'none';
+                        analyzeBtn.disabled = false;
+                    });
+            }, 2000); // Simulate 2-second API call
+        });
+        
+        function analyzeHomework() {
+            // This function would make the actual API call to your Azure backend
+            // For the MVP, we'll simulate a response based on the demo template
+            return new Promise((resolve) => {
+                // Fetch the template data for demonstration
+                fetch('results/advanced/math_homework_grading_template.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Customize the template data slightly
+                        data.student_info.name = "Demo Student";
+                        data.assignment_info.date = new Date().toISOString().split('T')[0];
+                        resolve(data);
+                    });
+            });
+        }
+        
+        function displayResults(data) {
+            // Display problems (Stage 1)
+            const problemsContainer = document.getElementById('problems-container');
+            problemsContainer.innerHTML = '';
+            
+            data.problems.forEach(problem => {
+                const problemEl = document.createElement('div');
+                problemEl.className = 'problem';
+                problemEl.innerHTML = `
+                    <h4>Problem ${problem.id}: ${problem.text}</h4>
+                    <p><strong>Correct:</strong> ${problem.is_correct ? 'Yes' : 'No'}</p>
+                    ${!problem.is_correct ? `<p><strong>Error Type:</strong> ${problem.error_details.type}</p>
+                    <p><strong>Description:</strong> ${problem.error_details.description}</p>` : ''}
+                `;
+                problemsContainer.appendChild(problemEl);
+            });
+            
+            // Display feedback (Stage 2)
+            const feedbackContainer = document.getElementById('feedback-container');
+            feedbackContainer.innerHTML = '';
+            
+            data.problems.forEach(problem => {
+                if (!problem.is_correct) {
+                    const feedbackEl = document.createElement('div');
+                    feedbackEl.className = 'problem';
+                    feedbackEl.innerHTML = `
+                        <h4>Feedback for Problem ${problem.id}</h4>
+                        <p><strong>Concept:</strong> ${problem.feedback.concept_explanation}</p>
+                        <p><strong>Strategy:</strong> ${problem.feedback.learning_strategy}</p>
+                        <h5>Questions to Consider:</h5>
+                        <ul>
+                            ${problem.feedback.socratic_questions.map(q => `<li>${q}</li>`).join('')}
+                        </ul>
+                        <h5>Visual Aids:</h5>
+                        <p>${Object.values(problem.feedback.visual_aids).join('</p><p>')}</p>
+                    `;
+                    feedbackContainer.appendChild(feedbackEl);
+                }
+            });
+            
+            // Display summary (Stage 3)
+            const summaryContainer = document.getElementById('summary-container');
+            summaryContainer.innerHTML = `
+                <div class="problem">
+                    <h4>Summary for ${data.student_info.name}</h4>
+                    <p><strong>Score:</strong> ${data.assignment_info.score_percentage}% (${data.assignment_info.total_correct}/${data.assignment_info.total_problems})</p>
+                    
+                    <h5>Strengths:</h5>
+                    <ul>
+                        ${data.summary.strengths.map(s => `<li>${s}</li>`).join('')}
+                    </ul>
+                    
+                    <h5>Areas for Improvement:</h5>
+                    <ul>
+                        ${data.summary.areas_for_improvement.map(a => `<li>${a}</li>`).join('')}
+                    </ul>
+                    
+                    <h5>Teacher Recommendations:</h5>
+                    <ul>
+                        ${data.summary.teacher_recommendations.map(r => `<li>${r}</li>`).join('')}
+                    </ul>
+                    
+                    <h5>Next Steps:</h5>
+                    <ul>
+                        ${data.summary.next_steps.map(s => `<li>${s}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            
+            // Show results
+            resultsContainer.style.display = 'block';
+        }
+        
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            loader.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "student_info": {
+    "name": "Student",
+    "grade_level": "Elementary"
+  },
+  "assignment_info": {
+    "title": "Math Homework",
+    "date": "2025-05-03",
+    "total_problems": 1,
+    "total_correct": 0,
+    "score_percentage": 0.0
+  },
+  "problems": [
+    {
+      "id": 1,
+      "text": "\u00d7\u00d78\u00d7\u00d780\u00d7888\u00d78\u00d7\u00d7\u00d78\u00d7\u00d7\u00d7808\u00d7\u00d788\u00d78888888\u00d788",
+      "is_correct": false,
+      "parsed": {
+        "operation": "\u00d7"
+      },
+      "error_details": {
+        "type": "Procedural Error",
+        "description": "Could not parse equation format",
+        "common_mistake": "unknown"
+      },
+      "feedback": {
+        "concept_explanation": "",
+        "learning_strategy": "",
+        "socratic_questions": [],
+        "direct_instruction": [],
+        "visual_aids": {}
+      }
+    }
+  ],
+  "summary": {
+    "strengths": [],
+    "areas_for_improvement": [
+      "Practice with \u00d7 operation(s) is needed."
+    ],
+    "teacher_recommendations": [
+      "Practice counting forward from a number",
+      "Use visual aids like number lines or manipulatives",
+      "Work on number recognition and value understanding"
+    ],
+    "next_steps": [
+      "Review basic arithmetic facts",
+      "Practice counting objects",
+      "Build understanding of number values with manipulatives"
+    ]
+  },
+  "pedagogical_approach": {
+    "teaching_style": "Multi-sensory",
+    "differentiation_suggestions": [
+      "Use concrete manipulatives to build conceptual understanding",
+      "Practice with number lines to visualize operations",
+      "Incorporate games that reinforce basic math facts"
+    ]
+  }
+}

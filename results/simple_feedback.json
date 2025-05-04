@@ -1,0 +1,205 @@
+{
+  "section_analysis": [
+    {
+      "paragraph_number": 1,
+      "text_excerpt": "\nThe Impact of Climate Change on Marine Ecosystems",
+      "issues": [
+        {
+          "type": "grammar_error",
+          "description": "Possible incorrect use of noun as verb"
+        },
+        {
+          "type": "grammar_error",
+          "description": "Possible incorrect use of noun as verb"
+        }
+      ],
+      "strengths": [
+        {
+          "type": "strong_point",
+          "description": "Clear topic sentence"
+        }
+      ]
+    },
+    {
+      "paragraph_number": 2,
+      "text_excerpt": "Climate change is one of the most pressing issues facing our planet today. Rising temperatures, ocea...",
+      "issues": [
+        {
+          "type": "grammar_error",
+          "description": "Possible incorrect use of noun as verb"
+        },
+        {
+          "type": "grammar_error",
+          "description": "Possible incorrect use of noun as verb"
+        },
+        {
+          "type": "grammar_error",
+          "description": "Possible incorrect use of noun as verb"
+        },
+        {
+          "type": "punctuation_error",
+          "description": "Possible comma splice with conjunction"
+        }
+      ],
+      "strengths": [
+        {
+          "type": "strong_point",
+          "description": "Clear topic sentence"
+        }
+      ]
+    },
+    {
+      "paragraph_number": 3,
+      "text_excerpt": "Ocean acidification is occuring due to increased CO2 levels in the atmosphere. When carbon dioxide d...",
+      "issues": [
+        {
+          "type": "spelling_error",
+          "description": "Possible incorrect use of 'there'"
+        },
+        {
+          "type": "spelling_error",
+          "description": "Misspelling: 'occurring' has two 'r's"
+        },
+        {
+          "type": "punctuation_error",
+          "description": "Possible comma splice with conjunction"
+        }
+      ],
+      "strengths": [
+        {
+          "type": "strong_point",
+          "description": "Clear topic sentence"
+        }
+      ]
+    },
+    {
+      "paragraph_number": 4,
+      "text_excerpt": "Rising sea temperatures are another major concern. Many marine species have specific temperature req...",
+      "issues": [],
+      "strengths": [
+        {
+          "type": "strong_point",
+          "description": "Clear topic sentence"
+        }
+      ]
+    },
+    {
+      "paragraph_number": 5,
+      "text_excerpt": "Changes in ocean currents and weather patterns also effect marine life. Currents distribute nutrient...",
+      "issues": [
+        {
+          "type": "grammar_error",
+          "description": "Possible incorrect use of noun as verb"
+        },
+        {
+          "type": "punctuation_error",
+          "description": "Possible comma splice with conjunction"
+        }
+      ],
+      "strengths": [
+        {
+          "type": "strong_point",
+          "description": "Clear topic sentence"
+        }
+      ]
+    },
+    {
+      "paragraph_number": 6,
+      "text_excerpt": "In conclusion, climate change poses a significant threat to marine ecosystems. The combined effects ...",
+      "issues": [
+        {
+          "type": "grammar_error",
+          "description": "Possible incorrect use of noun as verb"
+        },
+        {
+          "type": "punctuation_error",
+          "description": "Possible comma splice with conjunction"
+        }
+      ],
+      "strengths": [
+        {
+          "type": "strong_point",
+          "description": "Clear topic sentence"
+        }
+      ]
+    }
+  ],
+  "error_patterns": [
+    {
+      "type": "grammar_error",
+      "frequency": 7,
+      "examples": [
+        "Impact of",
+        "Change on",
+        "change is"
+      ]
+    },
+    {
+      "type": "punctuation_error",
+      "frequency": 4,
+      "examples": [
+        ", and",
+        ", and",
+        ", and"
+      ]
+    },
+    {
+      "type": "spelling_error",
+      "frequency": 2,
+      "examples": [
+        "there",
+        "occuring"
+      ]
+    }
+  ],
+  "strengths": [
+    {
+      "type": "strong_point",
+      "paragraph": 0,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 1,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 2,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 3,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 4,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 5,
+      "description": "Clear topic sentence"
+    }
+  ],
+  "improvement_suggestions": [
+    {
+      "focus_area": "Spelling and Word Choice",
+      "suggestions": [
+        "Use spell check before submitting",
+        "Review commonly confused words like there/their/they're",
+        "Keep a personal list of words you frequently misspell"
+      ]
+    },
+    {
+      "focus_area": "Grammar",
+      "suggestions": [
+        "Review subject-verb agreement rules",
+        "Read your work aloud to catch awkward constructions",
+        "Consider shorter, clearer sentences when expressing complex ideas"
+      ]
+    }
+  ]
+}

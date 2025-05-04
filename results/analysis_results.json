@@ -1,0 +1,78 @@
+{
+  "total_score": 100,
+  "total_questions": 4,
+  "final_score": 25.0,
+  "questions": [
+    {
+      "question_number": 1,
+      "text": "x\u00b2 + y\u00b2 = r\u00b2",
+      "analysis": {
+        "question": "x\u00b2 + y\u00b2 = r\u00b2",
+        "student_answer": "r\u00b2",
+        "correct_answer": "r\u00b2",
+        "errors": [],
+        "score": 100
+      },
+      "feedback_text": "Great job! Your answer is correct.",
+      "recommendations": [],
+      "score": 100
+    },
+    {
+      "question_number": 2,
+      "text": "1 + 1 = 3",
+      "analysis": {
+        "question": "1 + 1 = 3",
+        "student_answer": "3",
+        "correct_answer": "2",
+        "errors": [
+          {
+            "type": "Calculation Error",
+            "description": "1 + 1 equals 2, not 3"
+          }
+        ],
+        "score": 0
+      },
+      "feedback_text": "Let's look at what needs improvement:\n\nThe correct answer to 1 + 1 is 2, not 3.\n\nCalculation Error:\n- 1 + 1 equals 2, not 3\n",
+      "recommendations": [],
+      "score": 0
+    },
+    {
+      "question_number": 3,
+      "text": "1 - 1 = 4",
+      "analysis": {
+        "question": "1 - 1 = 4",
+        "student_answer": "4",
+        "correct_answer": "0",
+        "errors": [
+          {
+            "type": "Calculation Error",
+            "description": "1 - 1 equals 0, not 4"
+          }
+        ],
+        "score": 0
+      },
+      "feedback_text": "Let's look at what needs improvement:\n\nThe correct answer to 1 - 1 is 0, not 4.\n\nCalculation Error:\n- 1 - 1 equals 0, not 4\n",
+      "recommendations": [],
+      "score": 0
+    },
+    {
+      "question_number": 4,
+      "text": "1/0 = 0",
+      "analysis": {
+        "question": "1/0 = 0",
+        "student_answer": "0",
+        "correct_answer": "undefined",
+        "errors": [
+          {
+            "type": "Conceptual Error",
+            "description": "Division by zero is undefined"
+          }
+        ],
+        "score": 0
+      },
+      "feedback_text": "Let's look at what needs improvement:\n\nDivision by zero is undefined in mathematics.\n\nConceptual Error:\n- Division by zero is undefined\n",
+      "recommendations": [],
+      "score": 0
+    }
+  ]
+}

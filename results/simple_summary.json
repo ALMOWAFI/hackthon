@@ -1,0 +1,45 @@
+{
+  "final_grade": {
+    "percentage": 73.0,
+    "letter_grade": "C",
+    "points": "73/100"
+  },
+  "overall_assessment": "This paper meets requirements and demonstrates good work in Organization & Structure. The primary area needing improvement is Language & Style.",
+  "key_strengths": [
+    {
+      "description": "Clear topic sentence",
+      "frequency": "Observed 6 times"
+    }
+  ],
+  "improvement_areas": [
+    {
+      "area": "Language & Style",
+      "justification": "Numerous language errors affect readability.",
+      "score": "12/25 points"
+    },
+    {
+      "area": "Content & Development",
+      "justification": "Moderate length allows for some content development.",
+      "score": "24/30 points"
+    }
+  ],
+  "next_steps": [
+    {
+      "focus_area": "Spelling and Word Choice",
+      "suggestions": [
+        "Use spell check before submitting",
+        "Review commonly confused words like there/their/they're",
+        "Keep a personal list of words you frequently misspell"
+      ]
+    },
+    {
+      "focus_area": "Grammar",
+      "suggestions": [
+        "Review subject-verb agreement rules",
+        "Read your work aloud to catch awkward constructions",
+        "Consider shorter, clearer sentences when expressing complex ideas"
+      ]
+    }
+  ],
+  "closing_comment": "You've met the basic requirements. Focus on the suggested improvements to strengthen your writing."
+}

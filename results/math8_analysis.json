@@ -1,0 +1,538 @@
+{
+  "ocr_result": {
+    "text": "DATA\nDRIVEN\nDECISIONS\n2+2=5\n1.+2 = 5\naf -2/\nTy=(3.x) =x\n5+2=7",
+    "lines": [
+      {
+        "text": "DATA",
+        "boundingBox": [
+          906,
+          176,
+          1069,
+          179,
+          1068,
+          230,
+          905,
+          227
+        ]
+      },
+      {
+        "text": "DRIVEN",
+        "boundingBox": [
+          856,
+          243,
+          1072,
+          248,
+          1071,
+          304,
+          854,
+          298
+        ]
+      },
+      {
+        "text": "DECISIONS",
+        "boundingBox": [
+          757,
+          309,
+          1075,
+          315,
+          1074,
+          369,
+          756,
+          363
+        ]
+      },
+      {
+        "text": "2+2=5",
+        "boundingBox": [
+          388,
+          560,
+          661,
+          560,
+          661,
+          621,
+          388,
+          620
+        ]
+      },
+      {
+        "text": "1.+2 = 5",
+        "boundingBox": [
+          409,
+          650,
+          691,
+          638,
+          694,
+          695,
+          409,
+          706
+        ]
+      },
+      {
+        "text": "af -2/",
+        "boundingBox": [
+          435,
+          743,
+          672,
+          760,
+          666,
+          824,
+          434,
+          802
+        ]
+      },
+      {
+        "text": "Ty=(3.x) =x",
+        "boundingBox": [
+          436,
+          777,
+          881,
+          769,
+          882,
+          862,
+          439,
+          877
+        ]
+      },
+      {
+        "text": "5+2=7",
+        "boundingBox": [
+          478,
+          896,
+          814,
+          911,
+          811,
+          988,
+          476,
+          974
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "page": 1,
+        "angle": 1.0809,
+        "width": 1200,
+        "height": 1600,
+        "unit": "pixel",
+        "lines": [
+          {
+            "boundingBox": [
+              906,
+              176,
+              1069,
+              179,
+              1068,
+              230,
+              905,
+              227
+            ],
+            "text": "DATA",
+            "appearance": {
+              "style": {
+                "name": "other",
+                "confidence": 0.972
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  910,
+                  176,
+                  1052,
+                  180,
+                  1052,
+                  231,
+                  906,
+                  228
+                ],
+                "text": "DATA",
+                "confidence": 0.998
+              }
+            ]
+          },
+          {
+            "boundingBox": [
+              856,
+              243,
+              1072,
+              248,
+              1071,
+              304,
+              854,
+              298
+            ],
+            "text": "DRIVEN",
+            "appearance": {
+              "style": {
+                "name": "other",
+                "confidence": 0.972
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  856,
+                  243,
+                  1056,
+                  249,
+                  1056,
+                  304,
+                  855,
+                  299
+                ],
+                "text": "DRIVEN",
+                "confidence": 0.799
+              }
+            ]
+          },
+          {
+            "boundingBox": [
+              757,
+              309,
+              1075,
+              315,
+              1074,
+              369,
+              756,
+              363
+            ],
+            "text": "DECISIONS",
+            "appearance": {
+              "style": {
+                "name": "other",
+                "confidence": 0.972
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  759,
+                  309,
+                  1064,
+                  317,
+                  1063,
+                  369,
+                  757,
+                  365
+                ],
+                "text": "DECISIONS",
+                "confidence": 0.994
+              }
+            ]
+          },
+          {
+            "boundingBox": [
+              388,
+              560,
+              661,
+              560,
+              661,
+              621,
+              388,
+              620
+            ],
+            "text": "2+2=5",
+            "appearance": {
+              "style": {
+                "name": "handwriting",
+                "confidence": 0.982
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  405,
+                  561,
+                  654,
+                  561,
+                  655,
+                  622,
+                  404,
+                  619
+                ],
+                "text": "2+2=5",
+                "confidence": 0.818
+              }
+            ]
+          },
+          {
+            "boundingBox": [
+              409,
+              650,
+              691,
+              638,
+              694,
+              695,
+              409,
+              706
+            ],
+            "text": "1.+2 = 5",
+            "appearance": {
+              "style": {
+                "name": "handwriting",
+                "confidence": 1
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  409,
+                  651,
+                  566,
+                  644,
+                  567,
+                  696,
+                  409,
+                  706
+                ],
+                "text": "1.+2",
+                "confidence": 0.747
+              },
+              {
+                "boundingBox": [
+                  581,
+                  643,
+                  623,
+                  641,
+                  624,
+                  695,
+                  582,
+                  696
+                ],
+                "text": "=",
+                "confidence": 0.948
+              },
+              {
+                "boundingBox": [
+                  645,
+                  640,
+                  679,
+                  639,
+                  681,
+                  696,
+                  646,
+                  696
+                ],
+                "text": "5",
+                "confidence": 0.853
+              }
+            ]
+          },
+          {
+            "boundingBox": [
+              435,
+              743,
+              672,
+              760,
+              666,
+              824,
+              434,
+              802
+            ],
+            "text": "af -2/",
+            "appearance": {
+              "style": {
+                "name": "handwriting",
+                "confidence": 1
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  436,
+                  743,
+                  512,
+                  748,
+                  510,
+                  803,
+                  435,
+                  801
+                ],
+                "text": "af",
+                "confidence": 0.698
+              },
+              {
+                "boundingBox": [
+                  536,
+                  749,
+                  666,
+                  760,
+                  662,
+                  824,
+                  534,
+                  805
+                ],
+                "text": "-2/",
+                "confidence": 0.429
+              }
+            ]
+          },
+          {
+            "boundingBox": [
+              436,
+              777,
+              881,
+              769,
+              882,
+              862,
+              439,
+              877
+            ],
+            "text": "Ty=(3.x) =x",
+            "appearance": {
+              "style": {
+                "name": "handwriting",
+                "confidence": 0.966
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  437,
+                  792,
+                  742,
+                  771,
+                  740,
+                  860,
+                  440,
+                  878
+                ],
+                "text": "Ty=(3.x)",
+                "confidence": 0.09
+              },
+              {
+                "boundingBox": [
+                  759,
+                  771,
+                  873,
+                  780,
+                  868,
+                  863,
+                  757,
+                  860
+                ],
+                "text": "=x",
+                "confidence": 0.168
+              }
+            ]
+          },
+          {
+            "boundingBox": [
+              478,
+              896,
+              814,
+              911,
+              811,
+              988,
+              476,
+              974
+            ],
+            "text": "5+2=7",
+            "appearance": {
+              "style": {
+                "name": "handwriting",
+                "confidence": 1
+              }
+            },
+            "words": [
+              {
+                "boundingBox": [
+                  479,
+                  897,
+                  811,
+                  912,
+                  808,
+                  988,
+                  478,
+                  976
+                ],
+                "text": "5+2=7",
+                "confidence": 0.748
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "analysis": {
+    "errors": [
+      {
+        "id": 1,
+        "type": "arithmetic_error",
+        "subtype": "addition_error",
+        "text": "2 + 2 = 5",
+        "correction": "2 + 2 = 4",
+        "explanation": "The sum of 2 and 2 should be 4, not 5.",
+        "wrong_value": 5,
+        "correct_value": 4,
+        "bounding_box": {
+          "top_left_x": 388,
+          "top_left_y": 560,
+          "bottom_right_x": 661,
+          "bottom_right_y": 621
+        },
+        "common_mistake": "off_by_one_high",
+        "pedagogical_feedback": {
+          "concept": "Check your counting. When adding, make sure you count the correct number of steps.",
+          "strategy": "Try using manipulatives like counters or number line to verify your addition."
+        }
+      }
+    ],
+    "problems": [
+      {
+        "id": 1,
+        "text": "2+2=5",
+        "parsed": {
+          "first_number": 2,
+          "operation": "+",
+          "second_number": 2,
+          "result": 5
+        },
+        "bounding_box": {
+          "top_left_x": 388,
+          "top_left_y": 560,
+          "bottom_right_x": 661,
+          "bottom_right_y": 621
+        }
+      },
+      {
+        "id": 2,
+        "text": "5+2=7",
+        "parsed": {
+          "first_number": 5,
+          "operation": "+",
+          "second_number": 2,
+          "result": 7
+        },
+        "bounding_box": {
+          "top_left_x": 478,
+          "top_left_y": 896,
+          "bottom_right_x": 811,
+          "bottom_right_y": 988
+        }
+      }
+    ],
+    "pedagogical_feedback": [
+      {
+        "error_id": 1,
+        "socratic_approach": [
+          "If you have 2 objects and add 2 more, how many do you have in total?",
+          "Can you count from 2, adding 2 more?",
+          "If your answer is 5, can you show me how you got that?",
+          "What strategy did you use to solve this addition problem?"
+        ],
+        "direct_instruction": [
+          "The correct answer is 2 + 2 = 4.",
+          "When adding 2 and 2, count 2 steps forward from 2.",
+          "Count objects: 2 + 2 = 4."
+        ],
+        "visualization_suggestion": {
+          "number_line": "Draw a number line, start at 2, and move 2 steps to the right.",
+          "counters": "Use 2 red counters and 2 blue counters, then count all counters.",
+          "groups": "Draw 2 circles in one group and 2 circles in another group, then count all circles."
+        }
+      }
+    ]
+  }
+}

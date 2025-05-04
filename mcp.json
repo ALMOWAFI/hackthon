@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "default": {
+      "projectPurpose": "This is a Python project for analyzing and grading elementary math homework from scanned images.",
+      "keyTasks": [
+        "Use OCR (Tesseract or Cloud Vision) to extract text from handwritten homework images",
+        "Compare student answers with correct math solutions",
+        "Categorize mistakes: calculation, procedural, conceptual",
+        "Visually annotate the image with mistakes and final grade",
+        "Output a structured JSON report with feedback, score, and learning tips"
+      ],
+      "codeEntryPoints": [
+        "math_analyzer/__init__.py",
+        "math_analyzer/analyze_homework.py",
+        "example.py"
+      ],
+      "dataOutputs": [
+        "output/annotated_image.jpg",
+        "output/analysis_results.json",
+        "output/feedback.txt"
+      ],
+      "aiAssistanceGoals": [
+        "Refactor legacy logic into modular functions",
+        "Enhance OCR accuracy for handwritten math",
+        "Improve grading rubric and feedback specificity",
+        "Generate clean, testable outputs with confidence scoring"
+      ]
+    }
+  }
+}

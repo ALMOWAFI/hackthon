@@ -1,0 +1,98 @@
+{
+  "image": "C:\\Users\\Aliel\\Downloads\\hack2\\test_images\\math8.jpeg",
+  "problems": [
+    {
+      "expression": "2+2=5",
+      "errors": [
+        {
+          "type": "CALCULATION",
+          "location": "result",
+          "severity": "high",
+          "confidence": 0.98
+        }
+      ],
+      "feedback": {
+        "socratic": "If we break down 2+2=5, what do you notice about the calculation?",
+        "direct": "The correct calculation for 2+2=5 would give us 4.",
+        "growth_mindset": "Making calculation errors is part of learning. Let's see what we can learn from 2+2=5.",
+        "constructivist": "What existing knowledge can you apply to verify 2+2=5?",
+        "inquiry_based": "How could we investigate whether 2+2=5 is correct?"
+      },
+      "next_steps": {
+        "practice_problems": [
+          "Mental math strategies"
+        ],
+        "concepts_to_review": [
+          "Place value"
+        ],
+        "suggested_resources": [
+          "Number line practice"
+        ]
+      },
+      "location": {
+        "x1": 388,
+        "y1": 560,
+        "x2": 510,
+        "y2": 590
+      }
+    },
+    {
+      "expression": "1+2=5",
+      "errors": [
+        {
+          "type": "CALCULATION",
+          "location": "result",
+          "severity": "high",
+          "confidence": 0.98
+        }
+      ],
+      "feedback": {
+        "socratic": "What would be another way to check if 1+2=5 is correct?",
+        "direct": "When calculating 1+2=5, remember to follow the order of operations: parentheses, exponents, multiplication/division, addition/subtraction.",
+        "growth_mindset": "Each calculation mistake is an opportunity to grow. Let's analyze 1+2=5 carefully.",
+        "constructivist": "Try building a mental model for 1+2=5 using what you already know.",
+        "inquiry_based": "What patterns do you notice in 1+2=5 that might help us?"
+      },
+      "next_steps": {
+        "practice_problems": [
+          "Mental math strategies"
+        ],
+        "concepts_to_review": [
+          "Place value"
+        ],
+        "suggested_resources": [
+          "Number line practice"
+        ]
+      },
+      "location": {
+        "x1": 409,
+        "y1": 650,
+        "x2": 520,
+        "y2": 680
+      }
+    }
+  ],
+  "visual_feedback": {
+    "marked_image_path": "C:\\Users\\Aliel\\Downloads\\hack2\\results\\math8_marked.jpg",
+    "error_locations": [
+      {
+        "expression": "2+2=5",
+        "box": [
+          388,
+          560,
+          510,
+          590
+        ]
+      },
+      {
+        "expression": "1+2=5",
+        "box": [
+          409,
+          650,
+          520,
+          680
+        ]
+      }
+    ]
+  }
+}

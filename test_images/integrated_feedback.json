@@ -1,0 +1,144 @@
+{
+    "student_info": {
+        "name": "Student",
+        "grade_level": "Elementary"
+    },
+    "assignment_info": {
+        "title": "Math Homework",
+        "date": "2025-05-03",
+        "total_problems": 7,
+        "total_correct": 1,
+        "score_percentage": 0.3333333333333333
+    },
+    "problems": [
+        {
+            "id": 1,
+            "text": "1 + 1 = 3",
+            "is_correct": false,
+            "parsed": {
+                "first_number": 1,
+                "operation": "+",
+                "second_number": 1,
+                "result": 3
+            },
+            "feedback": {
+                "concept_explanation": "Understanding mathematical operations involves careful step-by-step work. Double-checking your calculations can help catch errors.",
+                "learning_strategy": "Practice breaking down problems into smaller steps.",
+                "socratic_questions": [
+                    "Can you explain how you approached this problem?",
+                    "Is there another way to check your answer?",
+                    "What part of the problem do you find most challenging?"
+                ],
+                "direct_instruction": [
+                    "When adding, combine all quantities together.",
+                    "For larger numbers, line up the digits by place value before adding.",
+                    "Remember to carry when the sum in a place value exceeds 9."
+                ],
+                "visual_aids": {}
+            },
+            "error_details": {
+                "type": "equation_error",
+                "description": "Error in calculation",
+                "common_mistake": "equation_error"
+            }
+        },
+        {
+            "id": 2,
+            "text": "3x + 5 = 11",
+            "is_correct": null,
+            "parsed": {
+                "operation": "linear_equation",
+                "coefficient": 3,
+                "variable": "x",
+                "constant": 5,
+                "result": 11
+            }
+        },
+        {
+            "id": 3,
+            "text": "4 ?? 3 = 12 5 ?? + 12 ?? = 13'",
+            "is_correct": null,
+            "parsed": {}
+        },
+        {
+            "id": 4,
+            "text": "10 / 2 = 5",
+            "is_correct": true,
+            "parsed": {
+                "first_number": 10,
+                "operation": "/",
+                "second_number": 2,
+                "result": 5
+            }
+        },
+        {
+            "id": 5,
+            "text": "21 - 7 = 13",
+            "is_correct": false,
+            "parsed": {
+                "first_number": 21,
+                "operation": "-",
+                "second_number": 7,
+                "result": 13
+            },
+            "feedback": {
+                "concept_explanation": "Understanding mathematical operations involves careful step-by-step work. Double-checking your calculations can help catch errors.",
+                "learning_strategy": "Practice breaking down problems into smaller steps.",
+                "socratic_questions": [
+                    "Can you explain how you approached this problem?",
+                    "Is there another way to check your answer?",
+                    "What part of the problem do you find most challenging?"
+                ],
+                "direct_instruction": [
+                    "In subtraction, you're finding the difference between two numbers.",
+                    "You may need to borrow from the tens place if you can't subtract directly.",
+                    "Check your work by adding the answer to the number you subtracted."
+                ],
+                "visual_aids": {}
+            },
+            "error_details": {
+                "type": "equation_error",
+                "description": "Error in calculation",
+                "common_mistake": "equation_error"
+            }
+        },
+        {
+            "id": 6,
+            "text": "3 ?? + 4 ?? = 5 ??",
+            "is_correct": null,
+            "parsed": {}
+        },
+        {
+            "id": 7,
+            "text": "x ?? + y ?? = z ??",
+            "is_correct": null,
+            "parsed": {}
+        }
+    ],
+    "summary": {
+        "strengths": [
+            "The student correctly used / operation(s) in some problems.",
+            "The student answered some problems correctly."
+        ],
+        "areas_for_improvement": [
+            "Practice with -, + operation(s) is needed."
+        ],
+        "teacher_recommendations": [
+            "Use manipulatives to build addition concepts.",
+            "Practice subtraction with concrete objects before moving to abstract problems."
+        ],
+        "next_steps": [
+            "Review basic arithmetic facts",
+            "Practice counting objects",
+            "Build understanding of number values with manipulatives"
+        ]
+    },
+    "pedagogical_approach": {
+        "teaching_style": "Multi-sensory",
+        "differentiation_suggestions": [
+            "Use concrete manipulatives to build conceptual understanding",
+            "Practice with number lines to visualize operations",
+            "Incorporate games that reinforce basic math facts"
+        ]
+    }
+}

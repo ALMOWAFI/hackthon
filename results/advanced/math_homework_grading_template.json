@@ -1,0 +1,107 @@
+{
+  "student_info": {
+    "name": "Student Name",
+    "grade_level": "Elementary"
+  },
+  "assignment_info": {
+    "title": "Basic Arithmetic",
+    "date": "2025-05-03",
+    "total_problems": 2,
+    "total_correct": 0,
+    "score_percentage": 0
+  },
+  "problems": [
+    {
+      "id": 1,
+      "text": "2 + 2 = 5",
+      "is_correct": false,
+      "parsed": {
+        "first_number": 2,
+        "operation": "+",
+        "second_number": 2,
+        "student_result": 5,
+        "correct_result": 4
+      },
+      "error_details": {
+        "type": "arithmetic_error",
+        "description": "The sum of 2 and 2 should be 4, not 5.",
+        "common_mistake": "off_by_one_high"
+      },
+      "feedback": {
+        "concept_explanation": "Addition means combining two quantities to find their total.",
+        "learning_strategy": "Try counting from 2, 2 more steps: 2, 3, 4",
+        "socratic_questions": [
+          "If you have 2 objects and add 2 more, how many do you have in total?",
+          "Can you count from 2, adding 2 more?",
+          "If your answer is 5, can you show me how you got that?"
+        ],
+        "direct_instruction": [
+          "The correct answer is 2 + 2 = 4.",
+          "When adding 2 and 2, count 2 steps forward from 2."
+        ],
+        "visual_aids": {
+          "number_line": "Draw a number line, start at 2, and move 2 steps to the right.",
+          "counters": "Use 2 red counters and 2 blue counters, then count all counters.",
+          "groups": "Draw 2 circles in one group and 2 circles in another group, then count all circles."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "text": "1 + 2 = 5",
+      "is_correct": false,
+      "parsed": {
+        "first_number": 1,
+        "operation": "+",
+        "second_number": 2,
+        "student_result": 5,
+        "correct_result": 3
+      },
+      "error_details": {
+        "type": "arithmetic_error",
+        "description": "The sum of 1 and 2 should be 3, not 5.",
+        "common_mistake": "off_by_two_high"
+      },
+      "feedback": {
+        "concept_explanation": "Addition means combining two quantities to find their total.",
+        "learning_strategy": "Try counting from 1, 2 more steps: 1, 2, 3",
+        "socratic_questions": [
+          "If you have 1 object and add 2 more, how many do you have in total?",
+          "Can you count from 1, adding 2 more?",
+          "If your answer is 5, can you show me how you got that?"
+        ],
+        "direct_instruction": [
+          "The correct answer is 1 + 2 = 3.",
+          "When adding 1 and 2, count 2 steps forward from 1."
+        ],
+        "visual_aids": {
+          "number_line": "Draw a number line, start at 1, and move 2 steps to the right.",
+          "counters": "Use 1 red counter and 2 blue counters, then count all counters.",
+          "groups": "Draw 1 circle in one group and 2 circles in another group, then count all circles."
+        }
+      }
+    }
+  ],
+  "summary": {
+    "strengths": ["The student correctly wrote the addition operation."],
+    "areas_for_improvement": ["Basic addition calculation skills need reinforcement."],
+    "teacher_recommendations": [
+      "Practice counting forward from a number",
+      "Use visual aids like number lines or manipulatives",
+      "Work on number recognition and value understanding"
+    ],
+    "next_steps": [
+      "Review basic addition facts",
+      "Practice counting objects",
+      "Build understanding of number values with manipulatives"
+    ]
+  },
+  "pedagogical_approach": {
+    "teaching_style": "Multi-sensory",
+    "differentiation_suggestions": [
+      "Use concrete manipulatives to build conceptual understanding",
+      "Practice with number lines to visualize addition",
+      "Incorporate games that reinforce basic addition facts"
+    ]
+  }
+}

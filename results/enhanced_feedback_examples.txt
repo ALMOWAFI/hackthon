@@ -1,0 +1,108 @@
+ADVANCED MATHEMATICAL TEACHING FEEDBACK EXAMPLES
+
+Problem 1: x^2 + y^2 = r^2
+Student answer: y^2 = r^2 - x^2
+Correct answer: x^2 + y^2 = r^2
+Status: Correct
+
+Teacher Feedback:
+Correct! Your approach to this problem was spot-on.
+
+Mathematical Domain: ALGEBRAIC THINKING
+Teaching Style: SOCRATIC
+------------------------------------------------------------
+
+Problem 2: 1 + 1 = ?
+Student answer: 3
+Correct answer: 2
+Status: Incorrect
+
+Teacher Feedback:
+The answer 3 is incorrect. The correct answer is 2.
+
+1 + 1 equals 2, not 3
+
+This problem involves algebraic thinking. Key concepts here include Variable relationships, Function behaviors. A common misconception is 'Treating equal sign as an operation instead of equivalence'. Use balance models to demonstrate equation properties
+
+To improve in this area, try this strategy: Connect new learning to previously mastered concepts Also, compare expressions across different representations
+
+Mathematical Domain: ALGEBRAIC THINKING
+Teaching Style: DIRECT_INSTRUCTION
+------------------------------------------------------------
+
+Problem 3: 1 - 1 = ?
+Student answer: 4
+Correct answer: 0
+Status: Incorrect
+
+Teacher Feedback:
+The answer 4 is incorrect. The correct answer is 0.
+
+1 - 1 equals 0, not 4
+
+This problem involves algebraic thinking. Key concepts here include Variable relationships, Function behaviors. A common misconception is 'Treating equal sign as an operation instead of equivalence'. Use balance models to demonstrate equation properties
+
+To improve in this area, try this strategy: Build cumulative review into instruction Also, use balance models to demonstrate equation properties
+
+Mathematical Domain: ALGEBRAIC THINKING
+Teaching Style: DIRECT_INSTRUCTION
+------------------------------------------------------------
+
+Problem 4: 1/0 = ?
+Student answer: 0
+Correct answer: undefined
+Status: Incorrect
+
+Teacher Feedback:
+Have you considered why 0 doesn't work here?
+
+Division by zero is undefined
+
+This problem involves algebraic thinking. Key concepts here include Variable relationships, Function behaviors. Connect algebraic expressions to real situations
+
+To improve in this area, try this strategy: Create cognitive conflict to challenge misconceptions Also, use balance models to demonstrate equation properties
+
+What might happen if you tried solving this using undefined instead?
+
+Mathematical Domain: ALGEBRAIC THINKING
+Teaching Style: SOCRATIC
+------------------------------------------------------------
+
+Problem 5: Find the limit of sin(x)/x as x approaches 0
+Student answer: 0/0 = undefined
+Correct answer: 1
+Status: Incorrect
+
+Teacher Feedback:
+Have you considered why 0/0 = undefined doesn't work here?
+
+This is an indeterminate form requiring limit evaluation techniques.
+
+This problem involves algebraic thinking. Key concepts here include Variable relationships, Function behaviors. A common misconception is 'Treating equal sign as an operation instead of equivalence'. Use balance models to demonstrate equation properties
+
+To improve in this area, try this strategy: Create cognitive conflict to challenge misconceptions Also, compare expressions across different representations
+
+Now that we know the answer is 1, can you think of a similar problem?
+
+Mathematical Domain: ALGEBRAIC THINKING
+Teaching Style: SOCRATIC
+------------------------------------------------------------
+
+Problem 6: Integrate x^2 dx
+Student answer: x^3
+Correct answer: x^3/3 + C
+Status: Incorrect
+
+Teacher Feedback:
+The answer x^3 is incorrect. The correct answer is x^3/3 + C.
+
+The power rule for integration requires dividing by the new power and adding a constant.
+
+This problem involves algebraic thinking. Key concepts here include Variable relationships, Function behaviors. A common misconception is 'Treating equal sign as an operation instead of equivalence'. Use balance models to demonstrate equation properties
+
+To improve in this area, try this strategy: Chunk complex information into manageable parts Also, explore pattern breakdowns and exceptions
+
+Mathematical Domain: ALGEBRAIC THINKING
+Teaching Style: DIRECT_INSTRUCTION
+------------------------------------------------------------
+

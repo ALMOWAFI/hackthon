@@ -1,0 +1,50 @@
+{
+  "rubric_name": "Stem Paper Rubric - High_school Level",
+  "criteria_scores": [
+    {
+      "criterion_id": "content",
+      "criterion_name": "Content & Development",
+      "description": "The depth, breadth, and relevance of ideas presented",
+      "max_points": 30,
+      "score": 24,
+      "justification": "Moderate length allows for some content development."
+    },
+    {
+      "criterion_id": "organization",
+      "criterion_name": "Organization & Structure",
+      "description": "The logical flow and effective structuring of ideas",
+      "max_points": 25,
+      "score": 21,
+      "justification": "Good paragraph structure and transitions."
+    },
+    {
+      "criterion_id": "language",
+      "criterion_name": "Language & Style",
+      "description": "Grammar, spelling, sentence structure, and word choice",
+      "max_points": 25,
+      "score": 12,
+      "justification": "Numerous language errors affect readability."
+    },
+    {
+      "criterion_id": "formatting",
+      "criterion_name": "Formatting & Presentation",
+      "description": "Adherence to style guidelines and visual presentation",
+      "max_points": 10,
+      "score": 8,
+      "justification": "Paper follows basic formatting expectations."
+    },
+    {
+      "criterion_id": "critical_thinking",
+      "criterion_name": "Critical Thinking",
+      "description": "Depth of analysis, synthesis, and evaluation",
+      "max_points": 10,
+      "score": 8,
+      "justification": "Shows acceptable critical thinking."
+    }
+  ],
+  "total_points": 73,
+  "total_possible": 100,
+  "percentage": 73.0,
+  "letter_grade": "C",
+  "overall_assessment": "This paper meets requirements and demonstrates good work in Organization & Structure. The primary area needing improvement is Language & Style."
+}

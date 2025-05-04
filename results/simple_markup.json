@@ -1,0 +1,116 @@
+{
+  "annotations": [
+    {
+      "type": "grammar_error",
+      "paragraph": 0,
+      "text": "Impact of",
+      "description": "Possible incorrect use of noun as verb"
+    },
+    {
+      "type": "grammar_error",
+      "paragraph": 0,
+      "text": "Change on",
+      "description": "Possible incorrect use of noun as verb"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 0,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "grammar_error",
+      "paragraph": 1,
+      "text": "change is",
+      "description": "Possible incorrect use of noun as verb"
+    },
+    {
+      "type": "grammar_error",
+      "paragraph": 1,
+      "text": "effect on",
+      "description": "Possible incorrect use of noun as verb"
+    },
+    {
+      "type": "grammar_error",
+      "paragraph": 1,
+      "text": "change impacts",
+      "description": "Possible incorrect use of noun as verb"
+    },
+    {
+      "type": "punctuation_error",
+      "paragraph": 1,
+      "text": ", and",
+      "description": "Possible comma splice with conjunction"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 1,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "spelling_error",
+      "paragraph": 2,
+      "word": "there",
+      "correction": "their",
+      "description": "Possible incorrect use of 'there'"
+    },
+    {
+      "type": "spelling_error",
+      "paragraph": 2,
+      "word": "occuring",
+      "correction": "occurring",
+      "description": "Misspelling: 'occurring' has two 'r's"
+    },
+    {
+      "type": "punctuation_error",
+      "paragraph": 2,
+      "text": ", and",
+      "description": "Possible comma splice with conjunction"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 2,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 3,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "grammar_error",
+      "paragraph": 4,
+      "text": "effect marine",
+      "description": "Possible incorrect use of noun as verb"
+    },
+    {
+      "type": "punctuation_error",
+      "paragraph": 4,
+      "text": ", and",
+      "description": "Possible comma splice with conjunction"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 4,
+      "description": "Clear topic sentence"
+    },
+    {
+      "type": "grammar_error",
+      "paragraph": 5,
+      "text": "change poses",
+      "description": "Possible incorrect use of noun as verb"
+    },
+    {
+      "type": "punctuation_error",
+      "paragraph": 5,
+      "text": ", and",
+      "description": "Possible comma splice with conjunction"
+    },
+    {
+      "type": "strong_point",
+      "paragraph": 5,
+      "description": "Clear topic sentence"
+    }
+  ],
+  "paragraph_count": 6,
+  "word_count": 341
+}

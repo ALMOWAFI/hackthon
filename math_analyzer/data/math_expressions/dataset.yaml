@@ -1,0 +1,13 @@
+# YOLOv8 dataset configuration
+# Path relative to where the train.py script is run from
+path: ./math_analyzer/data/math_expressions
+train: images/train  # train images 
+val: images/val  # val images
+
+# Classes
+names:
+  0: math_expression  # one class for now - just any math expression
+
+# Optional settings 
+nc: 1  # number of classes
+task: detect  # detection task

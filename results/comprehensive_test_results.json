@@ -1,0 +1,915 @@
+{
+  "ocr_math_test_sample.jpg": {
+    "azure_ocr": {
+      "ocr_result": {
+        "lines": [
+          {
+            "text": "1 + 1 = 3",
+            "confidence": 0.95,
+            "bounding_box": [
+              50,
+              100,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "addition"
+          },
+          {
+            "text": "4 × 3 = 12",
+            "confidence": 0.9299999999999999,
+            "bounding_box": [
+              50,
+              200,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "multiplication"
+          },
+          {
+            "text": "10 / 2 = 5",
+            "confidence": 0.9099999999999999,
+            "bounding_box": [
+              50,
+              300,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "division"
+          },
+          {
+            "text": "3² + 4² = 5²",
+            "confidence": 0.8899999999999999,
+            "bounding_box": [
+              50,
+              400,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "addition",
+            "math_concept": "pythagorean_theorem",
+            "pythagorean_form": true
+          },
+          {
+            "text": "x² + y² = z²",
+            "confidence": 0.87,
+            "bounding_box": [
+              50,
+              500,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "addition",
+            "math_concept": "pythagorean_theorem",
+            "pythagorean_form": true
+          },
+          {
+            "text": "3x + 5 = 11",
+            "confidence": 0.85,
+            "bounding_box": [
+              300,
+              100,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "addition"
+          },
+          {
+            "text": "5² + 12² = 13²",
+            "confidence": 0.83,
+            "bounding_box": [
+              300,
+              200,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "addition",
+            "math_concept": "pythagorean_theorem",
+            "pythagorean_form": true
+          },
+          {
+            "text": "21 - 7 = 13",
+            "confidence": 0.8099999999999999,
+            "bounding_box": [
+              300,
+              300,
+              200,
+              50
+            ],
+            "is_equation": true,
+            "operation": "subtraction"
+          }
+        ],
+        "language": "en",
+        "textAngle": 0.0,
+        "orientation": "Up",
+        "regions": [
+          {
+            "lines": [
+              {
+                "text": "1 + 1 = 3",
+                "confidence": 0.95,
+                "bounding_box": [
+                  50,
+                  100,
+                  200,
+                  50
+                ]
+              },
+              {
+                "text": "4 × 3 = 12",
+                "confidence": 0.9299999999999999,
+                "bounding_box": [
+                  50,
+                  200,
+                  200,
+                  50
+                ]
+              },
+              {
+                "text": "10 / 2 = 5",
+                "confidence": 0.9099999999999999,
+                "bounding_box": [
+                  50,
+                  300,
+                  200,
+                  50
+                ]
+              },
+              {
+                "text": "3² + 4² = 5²",
+                "confidence": 0.8899999999999999,
+                "bounding_box": [
+                  50,
+                  400,
+                  200,
+                  50
+                ]
+              },
+              {
+                "text": "x² + y² = z²",
+                "confidence": 0.87,
+                "bounding_box": [
+                  50,
+                  500,
+                  200,
+                  50
+                ]
+              },
+              {
+                "text": "3x + 5 = 11",
+                "confidence": 0.85,
+                "bounding_box": [
+                  300,
+                  100,
+                  200,
+                  50
+                ]
+              },
+              {
+                "text": "5² + 12² = 13²",
+                "confidence": 0.83,
+                "bounding_box": [
+                  300,
+                  200,
+                  200,
+                  50
+                ]
+              },
+              {
+                "text": "21 - 7 = 13",
+                "confidence": 0.8099999999999999,
+                "bounding_box": [
+                  300,
+                  300,
+                  200,
+                  50
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "document_type": "math_homework"
+    },
+    "math_ocr": {
+      "raw_text": ",,,,,,,,,,,,,,,,,,,,,,7,,7,,,,77,,,,77,,,,7,,,7,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,,,,,,,,,",
+      "expressions": [
+        {
+          "text": ",,,,,,,,,,,,,,,,,,,,,,7,,7,,,,77,,,,77,,,,7,,,7,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,,,,,,,,,",
+          "type": "unknown",
+          "confidence": 0.029110614210367203,
+          "bounding_box": [
+            400,
+            14,
+            39,
+            44
+          ]
+        }
+      ],
+      "average_confidence": 0.028815368008192465
+    }
+  },
+  "ocr_math_formulas_test.jpg": {
+    "azure_ocr": {
+      "ocr_result": {
+        "lines": [
+          {
+            "text": "1 + 1 = 2",
+            "confidence": 0.98,
+            "bounding_box": [
+              50,
+              50,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "addition"
+          },
+          {
+            "text": "2 + 2 = 4",
+            "confidence": 0.97,
+            "bounding_box": [
+              50,
+              100,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "addition"
+          },
+          {
+            "text": "3 + 3 = 6",
+            "confidence": 0.96,
+            "bounding_box": [
+              50,
+              150,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "addition"
+          },
+          {
+            "text": "4 + 4 = 8",
+            "confidence": 0.95,
+            "bounding_box": [
+              50,
+              200,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "addition"
+          },
+          {
+            "text": "5 × 5 = 25",
+            "confidence": 0.94,
+            "bounding_box": [
+              50,
+              250,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "multiplication"
+          },
+          {
+            "text": "6 × 6 = 36",
+            "confidence": 0.93,
+            "bounding_box": [
+              50,
+              300,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "multiplication"
+          },
+          {
+            "text": "10 ÷ 2 = 5",
+            "confidence": 0.92,
+            "bounding_box": [
+              50,
+              350,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "division"
+          },
+          {
+            "text": "a² + b² = c²",
+            "confidence": 0.91,
+            "bounding_box": [
+              50,
+              400,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "addition",
+            "math_concept": "pythagorean_theorem",
+            "pythagorean_form": true
+          },
+          {
+            "text": "3² + 4² = 5²",
+            "confidence": 0.9,
+            "bounding_box": [
+              50,
+              450,
+              150,
+              40
+            ],
+            "is_equation": true,
+            "operation": "addition",
+            "math_concept": "pythagorean_theorem",
+            "pythagorean_form": true
+          }
+        ],
+        "language": "en",
+        "textAngle": 0.0,
+        "orientation": "Up",
+        "regions": [
+          {
+            "lines": [
+              {
+                "text": "1 + 1 = 2",
+                "confidence": 0.98,
+                "bounding_box": [
+                  50,
+                  50,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "2 + 2 = 4",
+                "confidence": 0.97,
+                "bounding_box": [
+                  50,
+                  100,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "3 + 3 = 6",
+                "confidence": 0.96,
+                "bounding_box": [
+                  50,
+                  150,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "4 + 4 = 8",
+                "confidence": 0.95,
+                "bounding_box": [
+                  50,
+                  200,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "5 × 5 = 25",
+                "confidence": 0.94,
+                "bounding_box": [
+                  50,
+                  250,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "6 × 6 = 36",
+                "confidence": 0.93,
+                "bounding_box": [
+                  50,
+                  300,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "10 ÷ 2 = 5",
+                "confidence": 0.92,
+                "bounding_box": [
+                  50,
+                  350,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "a² + b² = c²",
+                "confidence": 0.91,
+                "bounding_box": [
+                  50,
+                  400,
+                  150,
+                  40
+                ]
+              },
+              {
+                "text": "3² + 4² = 5²",
+                "confidence": 0.9,
+                "bounding_box": [
+                  50,
+                  450,
+                  150,
+                  40
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "document_type": "math_homework"
+    },
+    "math_ocr": {
+      "error": "'charmap' codec can't encode character '\\u2265' in position 18: character maps to <undefined>"
+    }
+  },
+  "ocr_math_homework.jpg": {
+    "azure_ocr": {
+      "ocr_result": {
+        "lines": [
+          {
+            "text": "Expression 382",
+            "confidence": 0.8,
+            "bounding_box": [
+              0,
+              0,
+              1200,
+              88
+            ]
+          }
+        ],
+        "language": "en",
+        "textAngle": 0.0,
+        "orientation": "Up",
+        "regions": [
+          {
+            "lines": [
+              {
+                "text": "Expression 382",
+                "confidence": 0.8,
+                "bounding_box": [
+                  0,
+                  0,
+                  1200,
+                  88
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "document_type": "math_homework"
+    },
+    "math_ocr": {
+      "error": "'charmap' codec can't encode character '\\u2264' in position 20: character maps to <undefined>"
+    }
+  },
+  "ocr_math8.jpeg": {
+    "azure_ocr": {
+      "ocr_result": {
+        "lines": [
+          {
+            "text": "Expression 1954",
+            "confidence": 0.8,
+            "bounding_box": [
+              109,
+              17,
+              86,
+              28
+            ]
+          }
+        ],
+        "language": "en",
+        "textAngle": 0.0,
+        "orientation": "Up",
+        "regions": [
+          {
+            "lines": [
+              {
+                "text": "Expression 1954",
+                "confidence": 0.8,
+                "bounding_box": [
+                  109,
+                  17,
+                  86,
+                  28
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "document_type": "math_homework"
+    },
+    "math_ocr": {
+      "error": "'charmap' codec can't encode character '\\u2264' in position 16: character maps to <undefined>"
+    }
+  },
+  "analysis_1 + 1 = 3": {
+    "type": "UNKNOWN",
+    "errors": [
+      {
+        "type": "Syntax Error",
+        "description": "Invalid mathematical expression"
+      }
+    ],
+    "feedback": []
+  },
+  "analysis_x + 5 = 10": {
+    "type": "UNKNOWN",
+    "errors": [
+      {
+        "type": "Syntax Error",
+        "description": "Invalid mathematical expression"
+      }
+    ],
+    "feedback": []
+  },
+  "analysis_x^2 + 3x + 2 = 0": {
+    "type": "QUADRATIC_EQUATION",
+    "errors": [
+      {
+        "type": "Syntax Error",
+        "description": "Invalid mathematical expression"
+      }
+    ],
+    "feedback": []
+  },
+  "analysis_a^2 + b^2 = c^2": {
+    "type": "PYTHAGOREAN",
+    "errors": [
+      {
+        "type": "Syntax Error",
+        "description": "Invalid mathematical expression"
+      }
+    ],
+    "feedback": []
+  },
+  "analysis_3² + 4² = 5²": {
+    "type": "UNKNOWN",
+    "errors": [
+      {
+        "type": "Syntax Error",
+        "description": "Invalid mathematical expression"
+      }
+    ],
+    "feedback": []
+  },
+  "integrated_math_test_sample.jpg": {
+    "problems": [
+      {
+        "id": 1,
+        "text": "1 + 1 = 3",
+        "equation": "1 + 1 = 3",
+        "bbox": [
+          50,
+          100,
+          250,
+          150
+        ],
+        "confidence": 0.95,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "addition",
+        "first_number": "1",
+        "second_number": "1",
+        "result": "3",
+        "is_valid": false,
+        "expected_result": 2.0
+      },
+      {
+        "id": 2,
+        "text": "4 × 3 = 12",
+        "equation": "4 × 3 = 12",
+        "bbox": [
+          50,
+          200,
+          250,
+          250
+        ],
+        "confidence": 0.9299999999999999,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "multiplication",
+        "first_number": "4",
+        "second_number": "3",
+        "result": "12",
+        "is_valid": true,
+        "expected_result": 12.0
+      },
+      {
+        "id": 3,
+        "text": "10 / 2 = 5",
+        "equation": "10 / 2 = 5",
+        "bbox": [
+          50,
+          300,
+          250,
+          350
+        ],
+        "confidence": 0.9099999999999999,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "division",
+        "first_number": "10",
+        "second_number": "2",
+        "result": "5",
+        "is_valid": true,
+        "expected_result": 5.0
+      },
+      {
+        "id": 4,
+        "text": "3² + 4² = 5²",
+        "equation": "3² + 4² = 5²",
+        "bbox": [
+          50,
+          400,
+          250,
+          450
+        ],
+        "confidence": 0.8899999999999999,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "addition",
+        "math_concept": "pythagorean_theorem",
+        "pythagorean_form": true,
+        "type": "general_equation",
+        "left_side": "3² + 4²",
+        "right_side": "5²"
+      },
+      {
+        "id": 5,
+        "text": "x² + y² = z²",
+        "equation": "x² + y² = z²",
+        "bbox": [
+          50,
+          500,
+          250,
+          550
+        ],
+        "confidence": 0.87,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "addition",
+        "math_concept": "pythagorean_theorem",
+        "pythagorean_form": true,
+        "type": "general_equation",
+        "left_side": "x² + y²",
+        "right_side": "z²"
+      },
+      {
+        "id": 6,
+        "text": "3x + 5 = 11",
+        "equation": "3x + 5 = 11",
+        "bbox": [
+          300,
+          100,
+          500,
+          150
+        ],
+        "confidence": 0.85,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "addition",
+        "first_number": "3x",
+        "second_number": "5",
+        "result": "11",
+        "is_valid": null
+      },
+      {
+        "id": 7,
+        "text": "5² + 12² = 13²",
+        "equation": "5² + 12² = 13²",
+        "bbox": [
+          300,
+          200,
+          500,
+          250
+        ],
+        "confidence": 0.83,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "addition",
+        "math_concept": "pythagorean_theorem",
+        "pythagorean_form": true,
+        "type": "general_equation",
+        "left_side": "5² + 12²",
+        "right_side": "13²"
+      },
+      {
+        "id": 8,
+        "text": "21 - 7 = 13",
+        "equation": "21 - 7 = 13",
+        "bbox": [
+          300,
+          300,
+          500,
+          350
+        ],
+        "confidence": 0.8099999999999999,
+        "source": "azure",
+        "is_equation": true,
+        "operation": "subtraction",
+        "first_number": "21",
+        "second_number": "7",
+        "result": "13",
+        "is_valid": false,
+        "expected_result": 14.0
+      }
+    ],
+    "analysis": [
+      {
+        "id": 1,
+        "text": "1 + 1 = 3",
+        "bbox": [
+          50,
+          100,
+          250,
+          150
+        ],
+        "parsed": {
+          "first_number": "1",
+          "operation": "addition",
+          "second_number": "1",
+          "result": "3",
+          "is_valid": false,
+          "expected_result": 2.0
+        },
+        "is_correct": false,
+        "error_type": "equation_error",
+        "error_message": "Equation is not mathematically valid",
+        "expected_result": null,
+        "confidence": 0.95
+      },
+      {
+        "id": 2,
+        "text": "4 × 3 = 12",
+        "bbox": [
+          50,
+          200,
+          250,
+          250
+        ],
+        "parsed": {
+          "first_number": "4",
+          "operation": "multiplication",
+          "second_number": "3",
+          "result": "12",
+          "is_valid": true,
+          "expected_result": 12.0
+        },
+        "is_correct": true,
+        "error_type": null,
+        "error_message": null,
+        "expected_result": null,
+        "confidence": 0.9299999999999999
+      },
+      {
+        "id": 3,
+        "text": "10 / 2 = 5",
+        "bbox": [
+          50,
+          300,
+          250,
+          350
+        ],
+        "parsed": {
+          "first_number": "10",
+          "operation": "division",
+          "second_number": "2",
+          "result": "5",
+          "is_valid": true,
+          "expected_result": 5.0
+        },
+        "is_correct": true,
+        "error_type": null,
+        "error_message": null,
+        "expected_result": null,
+        "confidence": 0.9099999999999999
+      },
+      {
+        "id": 4,
+        "text": "3² + 4² = 5²",
+        "bbox": [
+          50,
+          400,
+          250,
+          450
+        ],
+        "parsed": {
+          "type": "general_equation",
+          "left_side": "3² + 4²",
+          "right_side": "5²"
+        },
+        "is_correct": null,
+        "error_type": null,
+        "error_message": null,
+        "expected_result": null,
+        "confidence": 0.8899999999999999
+      },
+      {
+        "id": 5,
+        "text": "x² + y² = z²",
+        "bbox": [
+          50,
+          500,
+          250,
+          550
+        ],
+        "parsed": {
+          "type": "general_equation",
+          "left_side": "x² + y²",
+          "right_side": "z²"
+        },
+        "is_correct": null,
+        "error_type": null,
+        "error_message": null,
+        "expected_result": null,
+        "confidence": 0.87
+      },
+      {
+        "id": 6,
+        "text": "3x + 5 = 11",
+        "bbox": [
+          300,
+          100,
+          500,
+          150
+        ],
+        "parsed": {
+          "first_number": "3x",
+          "operation": "addition",
+          "second_number": "5",
+          "result": "11",
+          "is_valid": null
+        },
+        "is_correct": null,
+        "error_type": null,
+        "error_message": null,
+        "expected_result": null,
+        "confidence": 0.85
+      },
+      {
+        "id": 7,
+        "text": "5² + 12² = 13²",
+        "bbox": [
+          300,
+          200,
+          500,
+          250
+        ],
+        "parsed": {
+          "type": "general_equation",
+          "left_side": "5² + 12²",
+          "right_side": "13²"
+        },
+        "is_correct": null,
+        "error_type": null,
+        "error_message": null,
+        "expected_result": null,
+        "confidence": 0.83
+      },
+      {
+        "id": 8,
+        "text": "21 - 7 = 13",
+        "bbox": [
+          300,
+          300,
+          500,
+          350
+        ],
+        "parsed": {
+          "first_number": "21",
+          "operation": "subtraction",
+          "second_number": "7",
+          "result": "13",
+          "is_valid": false,
+          "expected_result": 14.0
+        },
+        "is_correct": false,
+        "error_type": "equation_error",
+        "error_message": "Equation is not mathematically valid",
+        "expected_result": null,
+        "confidence": 0.8099999999999999
+      }
+    ],
+    "problem_count": 8,
+    "error_count": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "socratic": {
+    "calculation": [
+      "What steps did you take to arrive at {student_answer}? Let's check each step.",
+      "Can you explain how you got from {step1} to {step2}?",
+      "What would happen if we tried a different approach to solve this?"
+    ],
+    "procedural": [
+      "What rule or method did you use here? Is there another way to approach this?",
+      "Could you break down your solution into smaller steps?",
+      "What is the first step in solving this type of problem?"
+    ],
+    "conceptual": [
+      "How does this problem relate to {concept}?",
+      "What are the key mathematical ideas we're working with here?",
+      "Can you think of a similar problem we've solved before?"
+    ],
+    "notation": [
+      "What does this symbol mean in mathematics?",
+      "How else could we write this expression?",
+      "Why do we use this particular notation?"
+    ]
+  },
+  "direct": {
+    "calculation": [
+      "Let's solve this step by step. First, {step1}",
+      "The calculation error is here: {error_point}. The correct step is {correction}",
+      "Remember to check your calculations at each step"
+    ],
+    "procedural": [
+      "Follow these steps: 1. {step1} 2. {step2} 3. {step3}",
+      "The correct procedure is to first {step1}, then {step2}",
+      "You need to apply {rule_name} here"
+    ],
+    "conceptual": [
+      "This problem is about {concept}. Here's how it works...",
+      "The key principle here is {principle}",
+      "Let's review the definition of {term}"
+    ],
+    "notation": [
+      "Use {correct_symbol} instead of {incorrect_symbol}",
+      "In math, we write this as {correct_notation}",
+      "The proper way to write this is {example}"
+    ]
+  },
+  "growth_mindset": {
+    "calculation": [],
+    "procedural": [],
+    "conceptual": [],
+    "notation": []
+  },
+  "visual": {
+    "calculation": [],
+    "procedural": [],
+    "conceptual": [],
+    "notation": []
+  },
+  "conceptual": {
+    "calculation": [],
+    "procedural": [],
+    "conceptual": [],
+    "notation": []
+  },
+  "procedural": {
+    "calculation": [],
+    "procedural": [],
+    "conceptual": [],
+    "notation": []
+  },
+  "analogical": {
+    "calculation": [],
+    "procedural": [],
+    "conceptual": [],
+    "notation": []
+  },
+  "gamified": {
+    "calculation": [],
+    "procedural": [],
+    "conceptual": [],
+    "notation": []
+  }
+}
