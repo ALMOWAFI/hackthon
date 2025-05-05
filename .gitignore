@@ -1,6 +1,8 @@
 # Ignore API keys and sensitive information
 **/api.env
 .env
+azure_config.json
+**/azure_secrets.json
 
 # Ignore large data files
 data/processed/mathinstruct.json
